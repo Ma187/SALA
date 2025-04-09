@@ -172,7 +172,7 @@ def parse_args(comstr=None):
 
     parser.add_argument('--pred_label_weight', type=float, default=0.8)
     parser.add_argument('--pseudo_label', type=str, default='none', choices=['pred', 'pred_shapelets', 'none'])
-    parser.add_argument('--patch_type', type=str, default='after_encode', choices=['before_encode', 'after_encode'])
+    parser.add_argument('--patch_type', type=str, default='before_encode', choices=['before_encode', 'after_encode'])
     parser.add_argument('--recon', action='store_true', default=False)
     parser.add_argument('--soft_weight', action='store_true', default=False)
     parser.add_argument('--temperature', type=float, default=1.)
