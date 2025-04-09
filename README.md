@@ -1,7 +1,7 @@
 # SALA
 
 
-**table 1**: Ablation analysis on benchmark and two univariate datasets dealing with 30% symmetric noise. The best results are in **bold**. The p-value is determined using the Wilcoxon signed-rank test.
+**table 1**: In the ablation experiments, I additionally provide p-values computed via the Wilcoxon signed-rank test.
 ![Ablation results](picture/ablation.png)
 
 \
