@@ -227,9 +227,9 @@ def flip_label(train_data,target, ratio, args):
     :param ratio: float: noise ratio
     :param pattern: flag to choose which type of noise.
             0 or mod(pattern, #classes) == 0 = symmetric
-            int = asymmetric
+            1 = asymmetric
             -1 = inst
-            -2 = flip
+
     :return:
     """
     pattern = args.label_noise
