@@ -95,7 +95,7 @@ def parse_args(comstr=None):
                                             'single_ae_aug_sel_allaug', 'single_ae_aug_before_sel',
                                             'SALA','sanm'], default='SALA')
 
-    parser.add_argument('--manual_seeds', type=int, nargs='+', default=[37, 118, 337, 815, 19],
+    parser.add_argument('--manual_seeds', type=int, nargs='+', default=[37, 118, 337],
                         # For fair comparation, we set the same seeds for all methods.
                         help='manual_seeds for five folds cross varidation')
     parser.add_argument('--label_correct_type', type=str, default='None', choices=['None', 'hard', 'soft'],
