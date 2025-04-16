@@ -592,7 +592,7 @@ def train_step(data_loader, model, optimizer, criterion, loss_all=None, epoch=0,
         if args.label_correct_type != 'None':
             with torch.no_grad():
                 pred_softlabel1 = torch.softmax(out_dict['bag_logits'].clone().detach(), dim=1)
-                pred_softlabel2 = torch.softmax(out_dict['bag_logits'].clone().detach(), dim=1)
+                pred_softlabel2 = torch.softmax(out_dict2['bag_logits'].clone().detach(), dim=1)
                 pred_softlabel1 = (pred_softlabel1 + pred_softlabel2) / 2
 
                 probs = conf_prob[x_idx][~clean_sample_mask].float()
